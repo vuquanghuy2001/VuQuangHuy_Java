@@ -21,6 +21,7 @@
 //
 //private static double getAverage(int[] arr) {
 //        int sum = 0;
+
 //        for (var item : arr) {
 //        sum += item;
 //        }
