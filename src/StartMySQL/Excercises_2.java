@@ -9,7 +9,7 @@ public class Excercises_2 {
 //        Excercises2_2();
 //        Excercises2_3();
 //        Excercises2_4();
-        Excercises2_5();
+//        Excercises2_5();
     }
 
     private static void Excercises2_1(){
