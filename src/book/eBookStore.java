@@ -7,7 +7,7 @@ public class eBookStore {
     public static void main(String[] args) {
 //        ex1_1();
 //        ex1_2();
-//        ex1_3();
+        ex1_3();
 //        ex1_4();
 //        ex1_5();
 //        ex2_1();
@@ -57,12 +57,12 @@ public class eBookStore {
                         "root", "");
                 Statement stmt = conn.createStatement();
         ){
-            String strSelect ="select * from book";
+            String strSelect =("select Book.*, sum(OrderDetail.Amount) as 'so luong da ban' from Book inner join OrderDetail on Book.BookID = OrderDetail.BookID group by BookName limit 100");;
             System.out.println("The SQL statement is: "+strSelect+"\n");
 
             ResultSet rset = stmt.executeQuery(strSelect);
 
-            System.out.println("10 best-selling books:");
+            System.out.println("100 best-selling books:");
             int rowCount=0;
             while (rset.next()){
                 String BookID =rset.getString("BookID");
@@ -90,7 +90,7 @@ public class eBookStore {
             Scanner input=new Scanner(System.in);
             System.out.println("Enter the category you want to search: ");
             String search=input.next();
-            String strSelect ="select * from book where "+"Category "+search;
+            String strSelect =("select * from book where Category ='"+search+"'");
             System.out.println("The SQL statement is: "+strSelect+"\n");
 
             ResultSet rset = stmt.executeQuery(strSelect);
@@ -123,7 +123,7 @@ public class eBookStore {
             Scanner input=new Scanner(System.in);
             System.out.println("Enter the author you want to search: ");
             String search=input.next();
-            String strSelect ="select * from book where "+"Author "+search;
+            String strSelect =("select * from book where AuthorName ='" + search + "'");
             System.out.println("The SQL statement is: "+strSelect+"\n");
 
             ResultSet rset = stmt.executeQuery(strSelect);
@@ -156,7 +156,7 @@ public class eBookStore {
             Scanner input=new Scanner(System.in);
             System.out.println("Enter ID: ");
             int search=input.nextInt();
-            String strSelect ="select * from book where "+"Author "+search;
+            String strSelect =("select * from Book where BookID ='"+search+"'");
             System.out.println("The SQL statement is: "+strSelect+"\n");
 
             ResultSet rset = stmt.executeQuery(strSelect);
@@ -448,3 +448,5 @@ public class eBookStore {
     }
 }
 
+//    executeQuery("select BookName, sum(status) as 'so luong da ban' from books inner join oderbook on books.BookName = oderbook.orderBookname group by BookName limit 100");
+//            System.out.println("Top 100 send books");
