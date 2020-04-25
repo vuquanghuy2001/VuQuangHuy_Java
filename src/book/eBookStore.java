@@ -7,7 +7,7 @@ public class eBookStore {
     public static void main(String[] args) {
 //        ex1_1();
 //        ex1_2();
-        ex1_3();
+//        ex1_3();
 //        ex1_4();
 //        ex1_5();
 //        ex2_1();
@@ -447,6 +447,3 @@ public class eBookStore {
         }
     }
 }
-
-//    executeQuery("select BookName, sum(status) as 'so luong da ban' from books inner join oderbook on books.BookName = oderbook.orderBookname group by BookName limit 100");
-//            System.out.println("Top 100 send books");
