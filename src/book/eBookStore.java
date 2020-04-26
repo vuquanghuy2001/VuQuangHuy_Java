@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class eBookStore {
     public static void main(String[] args) {
-//        ex1_1();
+        ex1_1();
 //        ex1_2();
 //        ex1_3();
 //        ex1_4();
@@ -30,25 +30,55 @@ public class eBookStore {
             String strSelect ="select * from book";
             System.out.println("The SQL statement is: "+strSelect+"\n");
 
-            ResultSet rset = stmt.executeQuery(strSelect);
+            // Step 3 & 4: Execute query and process query result
+            ResultSet rset = stmt.executeQuery("select * from book");
+// Get the metadata of the ResultSet
+            ResultSetMetaData rsetMD = rset.getMetaData();
+// Get the number of column from metadata
+            int numColumns = rsetMD.getColumnCount();
 
-            System.out.println("10 latest books:");
-            int rowCount=0;
-            while (rset.next()){
-                String BookID =rset.getString("BookID");
-                String BookName =rset.getString("BookName");
-                String AuthorName =rset.getString("AuthorName");
-                String Category =rset.getString("Category");
-                String Status =rset.getString("Status");
-                String Amount =rset.getString("Amount");
-                String Price =rset.getString("Price");
-                System.out.println(BookID+","+BookName+","+AuthorName+","+Category+","+Status+","+Amount+","+Price);
-                ++rowCount;
+// Print column names - Column Index begins at 1 (instead of 0)
+            for (int i = 1; i <= numColumns; ++i) {
+                System.out.printf("%-30s", rsetMD.getColumnName(i));
             }
-            System.out.println("Total number of records = " + rowCount);
-        }catch(SQLException ex) {
-            ex.printStackTrace();
+            System.out.println();
+
+// Print column class names
+            for (int i = 1; i <= numColumns; ++i) {
+                System.out.printf("%-30s",
+                        "(" + rsetMD.getColumnClassName(i) + ")");
+            }
+            System.out.println();
+
+// Print column contents for all the rows
+            while (rset.next()) {
+                for (int i = 1; i <= numColumns; ++i) {
+                    // getString() can be used for all column types
+                    System.out.printf("%-30s", rset.getString(i));
+                }
+                System.out.println();
+            }
+
+//            ResultSet rset = stmt.executeQuery(strSelect);
+//            System.out.println("10 latest books:");
+//            int rowCount=0;
+//            while (rset.next()){
+//                String BookID =rset.getString("BookID");
+//                String BookName =rset.getString("BookName");
+//                String AuthorName =rset.getString("AuthorName");
+//                String Category =rset.getString("Category");
+//                String Status =rset.getString("Status");
+//                String Amount =rset.getString("Amount");
+//                String Price =rset.getString("Price");
+//                System.out.println(BookID+","+BookName+","+AuthorName+","+Category+","+Status+","+Amount+","+Price);
+//                ++rowCount;
+            } catch (SQLException e) {
+            e.printStackTrace();
         }
+//        System.out.println("Total number of records = " + rowCount);
+//        }catch(SQLException ex) {
+//            ex.printStackTrace();
+//        }
     }
     private static void ex1_2(){
         try (
