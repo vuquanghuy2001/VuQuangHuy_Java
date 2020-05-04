@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://www.codelean.vn" xmlns="https://www.codelean.vn" elementFormDefault="qualified">
+    <xs:element name="codelean">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Sex" type="xs:string" />
+                <xs:element name="FName" type="xs:string" />
+                <xs:element name="LName" type="xs:string" />
+                <xs:element name="Age" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

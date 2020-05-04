@@ -1,0 +1,16 @@
+<!-- <?xml version="1.0" ?>
+<!DOCTYPE note SYSTEM "http://www.booksworld.com/dtd/CS4_5.dtd">
+<Book>
+    <Title>Million Seconds</Title>
+    <Author>Kevin Brown</Author>
+    <Chapter>The plot of the story starts from here.</Chapter>
+</Book> -->
+
+<?xml version="1.0" ?>
+<Book xmlns="http://www.booksworld.com" xmlns:xsi="http://www.w3.org/2001/
+XMLSchema-instance" xsi:schemaLocation="http://www.booksworld.com Book.
+xsd">
+    <Title>Million Seconds</Title>
+    <Author>Kelvin Brown</Author>
+    <Chapter>The plot of the story starts from here.</Chapter>
+</Book>

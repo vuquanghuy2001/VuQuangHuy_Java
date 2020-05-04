@@ -1,0 +1,8 @@
+<xs:element name="Books">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="ISBN" type="xs:string" />
+            <xs:element name="Quantity" type="xs:string" maxOccurs="100" minOccurs="0" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>

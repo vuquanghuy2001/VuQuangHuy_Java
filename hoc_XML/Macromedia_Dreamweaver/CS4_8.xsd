@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Books" type="BookType">
+        <xs:complexType name="AuthorType">
+            <xs:sequence>
+                <xs:element name="Name" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+        <xs:complexType name="PublisherType">
+            <xs:sequence>
+                <xs:element name="Name" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+        <xs:complexType name="BookType">
+            <xs:sequence>
+                <xs:element name="Title" type="xs:string" />
+                <xs:element name="Author" type="ComposerType" maxOccurs="unbounded" />
+                <xs:element name="Publisher" type="PublisherType" minOccurs="0" maxOccurs="unbounded" />

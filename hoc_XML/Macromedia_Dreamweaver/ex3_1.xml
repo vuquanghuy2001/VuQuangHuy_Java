@@ -1,0 +1,11 @@
+<!DOCTYPE Mobile [
+    <!ELEMENT Mobile (Company, Model, Price, Accessories)>
+    <!ELEMENT Company (#PCDATA)>
+    <!ELEMENT Model (#PCDATA)>
+    <!ELEMENT Price (#PCDATA)>
+    <!ELEMENT Accessories (#PCDATA)>
+    <!ATTLIST Model Type CDATA "Camera">
+    <!ENTITY HP "Head Phones">
+    <!ENTITY CH "Charger">
+    <!ENTITY SK "Starter's Kit">
+]>

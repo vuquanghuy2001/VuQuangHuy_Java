@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DOCUMENT xmlns="e http://www.fpt-aptech.com/customer">
+    <BookOrder OrderNo="1234">
+        <OrderDate>
+            2001-01-01
+        </OrderDate>
+        <Customer>
+            <Title>Mr.</Title>
+            <FirstName>Graeme</FirstName>
+            <LastName>Malcolm</LastName>
+        </Customer>
+        <Book>Treasure island</Book>
+        <Author>Robert Louis Stevenson</Author>
+    </BookOrder>
+</DOCUMENT>

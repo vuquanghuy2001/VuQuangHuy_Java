@@ -1,0 +1,5 @@
+<!ELEMENT codelean (Sex,FName,LName,Age)>
+<!ELEMENT Sex (#PCDATA)>
+<!ELEMENT FName (#PCDATA)>
+<!ELEMENT LName (#PCDATA)>
+<!ELEMENT Age (#PCDATA)>

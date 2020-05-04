@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<Books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CS4_8.xsd">
+    <Title>A cup of tea</Title>
+    <Author>
+        <Name>Dennis Compton</Name>
+    </Author>
+    <Author>
+        <Name>George Ford</Name>
+    </Author>
+    <Publisher>
+        <Name>Orange</Name>
+    </Publisher>
+</Books>

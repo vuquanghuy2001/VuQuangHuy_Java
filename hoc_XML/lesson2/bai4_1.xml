@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<!DOCTYPE codelean [
+        <!ELEMENT codelean (to,from,subject,message)>
+        <!ELEMENT to (#PCDATA)>
+        <!ELEMENT from (#PCDATA)>
+        <!ELEMENT subject (#PCDATA)>
+        <!ELEMENT message (#PCDATA)>
+        ]>
+<codelean>
+    <to>my Readers</to>
+    <from>ThiDK</from>
+    <subject>A Message to my readers</subject>
+    <message>Wellcome to codelean.vn</message>
+</codelean>

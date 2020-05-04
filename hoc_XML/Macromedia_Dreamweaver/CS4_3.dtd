@@ -1,0 +1,3 @@
+<!ELEMENT program (comments,code)>
+<!ELEMENT comments (#PCDATA)>
+<!ELEMENT code (#PCDATA)>

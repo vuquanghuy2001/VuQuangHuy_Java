@@ -1,0 +1,17 @@
+<!DOCTYPE Mobile [
+    <!ELEMENT Mobile (Company,Model,price,Accessories)>
+    <!ELEMENT Company (#PCDATA)>
+    <!ELEMENT Model (#PCDATA)>
+    <!ELEMENT Price (#PCDATA)>
+    <!ELEMENT Accessories (#PCDATA)>
+    <!ELEMENT Model type CDATA "Camera">
+    <!ELEMENT HP "Head Phones">
+    <!ELEMENT CH "Charger">
+    <!ELEMENT SK "Starters Kit">
+]>
+<Mobile>
+    <Company>Nokia</Company>
+    <Model type="Camera">6600</Model>
+    <Price>9999</Price>
+    <Accessories>&HP;,&CH; and a &SK;</Accessories>
+</Mobile>

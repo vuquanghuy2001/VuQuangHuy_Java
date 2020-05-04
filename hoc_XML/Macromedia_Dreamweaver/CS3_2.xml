@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE Mail [
+    <!ELEMENT Mail (To,From,Date,Time,Cc,Bcc,Subject,Message,Signature)>
+    <!ELEMENT To (#PCDATA)>
+    <!ELEMENT From (#PCDATA)>
+    <!ELEMENT Date (#PCDATA)>
+    <!ELEMENT Time (#PCDATA)>
+    <!ELEMENT Cc (#PCDATA)>
+    <!ELEMENT Bcc (#PCDATA)>
+    <!ELEMENT Subject (#PCDATA)>
+    <!ELEMENT Message (#PCDATA)>
+    <!ELEMENT Signature (#PCDATA)>
+]>
+<Mail>
+    <To>anne@xyz.com</To>
+    <From>bob@xyz.com</From>
+    <Date>27th February 2007</Date>
+    <Time>11:30 am</Time>
+    <Cc></Cc>
+    <Bcc></Bcc>
+    <subject>Meeting at Main Conference Room at 4:30pm</subject>
+    <Message>Hi, Kindly request you to attend the cultural body general
+        meeting in the main conference room at 4:30 pm. Please be present to learn
+        about the new activities being planned for the employees for this year.
+        Yours sincerely, Bob </Message>
+    <Signature></Signature>
+</Mail>

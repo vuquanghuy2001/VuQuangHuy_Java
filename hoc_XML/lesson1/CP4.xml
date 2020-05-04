@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE Student [
+        <!ELEMENT Student (Name,Dob,BloodGroup,RollNumber)>
+        <!ELEMENT Name (#PCDATA)>
+        <!ELEMENT Dob (#PCDATA)>
+        <!ELEMENT BloodGroup (#PCDATA)>
+        <!ELEMENT RollNumber (#PCDATA)>
+        ]>
+<Student>
+    <Name>James</Name>
+    <Dob>26th September, 1983</Dob>
+    <BloodGroup>A positive</BloodGroup>
+    <RollNumber>17</RollNumber>
+</Student>
