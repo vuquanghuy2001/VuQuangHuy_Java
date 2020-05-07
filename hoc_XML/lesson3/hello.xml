@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<?xml-stylesheet type="text/css" href="hello2.css" ?>
+<xsampdoc>
+    <greeting>
+        Hello,
+        <extension>there!</extension>
+    </greeting>
+    <answer class="ans">
+        <extension class="ex">Good morning!</extension>
+        <question>How are you?</question>
+    </answer>
+</xsampdoc>
