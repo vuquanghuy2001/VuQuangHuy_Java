@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="sales.xsl" ?>
+<PurchaseOrder>
+    <People1>
+        <Name>David Blake</Name>
+        <Age>32</Age>
+        <Price>$500</Price>
+    </People1>
+    <People2>
+        <Name>Susan Jones</Name>
+        <Age>55</Age>
+        <Price>$5000</Price>
+    </People2>
+    <People3>
+        <Name>Martin Howell</Name>
+        <Age>25</Age>
+        <Price>$0</Price>
+    </People3>
+    <People4>
+        <Name>Tony Kemp</Name>
+        <Age>35</Age>
+        <Price>$5000</Price>
+    </People4>
+</PurchaseOrder>
